@@ -309,6 +309,12 @@
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(my_env_name)</span> <span class="gp">user@domain:any/path$ </span>pip<span class="w"> </span>install<span class="w"> </span>HofstadterTools
 </pre></div>
 </div>
+<ol class="arabic simple" start="3">
+<li><p>[Optional] Upgrade an existing HofstadterTools installation.</p></li>
+</ol>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(my_env_name)</span> <span class="gp">user@domain:any/path$ </span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>HofstadterTools
+</pre></div>
+</div>
 <p>You can verify the installation by typing <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">list</span> <span class="pre">|</span> <span class="pre">grep</span> <span class="pre">HofstadterTools</span></code>, you can uninstall by typing <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">uninstall</span> <span class="pre">HofstadterTools</span></code>, and you can deactivate the environment by typing <code class="docutils literal notranslate"><span class="pre">deactivate</span></code>. The entire environment can be removed by deleting <code class="docutils literal notranslate"><span class="pre">my_env_folder</span></code>.</p>
 </section>
 <section id="using-conda">
@@ -324,6 +330,12 @@
 <li><p>Install HofstadterTools from conda-forge.</p></li>
 </ol>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(my_env_name)</span> <span class="gp">user@domain:any/path$ </span>conda<span class="w"> </span>install<span class="w"> </span>conda-forge::HofstadterTools
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>[Optional] Update an existing HofstadterTools installation.</p></li>
+</ol>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(my_env_name)</span> <span class="gp">user@domain:any/path$ </span>conda<span class="w"> </span>update<span class="w"> </span>HofstadterTools
 </pre></div>
 </div>
 <p>You can verify the installation by typing <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">list</span> <span class="pre">|</span> <span class="pre">grep</span> <span class="pre">hofstadtertools</span></code>, you can uninstall by typing <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">remove</span> <span class="pre">HofstadterTools</span></code>, and you can deactivate the environment by typing <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">deactivate</span></code>. The entire environment can be removed by typing <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">remove</span> <span class="pre">-n</span> <span class="pre">my_env_name</span> <span class="pre">--all</span></code>.</p>
@@ -358,6 +370,10 @@
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">user@domain:path/to/HofstadterTools/docs$ </span>make<span class="w"> </span>clean<span class="w"> </span>html
 <span class="gp">user@domain:path/to/HofstadterTools/docs$ </span>firefox<span class="w"> </span>build/html/index.html<span class="w"> </span><span class="p">&amp;</span>
 </pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Building the documentation locally with the inheritance diagrams requires that the <code class="docutils literal notranslate"><span class="pre">graphviz</span></code> program is installed, so that the <code class="docutils literal notranslate"><span class="pre">dot</span></code> program is in the path. For example, on Debian systems, this can be achieved by typing <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt</span> <span class="pre">install</span> <span class="pre">graphviz</span></code>, and verified by typing <code class="docutils literal notranslate"><span class="pre">dot</span> <span class="pre">-V</span></code>.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>

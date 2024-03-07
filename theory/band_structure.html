@@ -288,6 +288,54 @@ B &amp; 0 &amp; B^* &amp; A_3
 <a class="reference internal image-reference" href="../_images/band_structure_3D_both_square_nphi_1_4_t_1.png"><img alt="3D Band Structure" src="../_images/band_structure_3D_both_square_nphi_1_4_t_1.png" style="width: 32%;" /></a>
 <a class="reference internal image-reference" href="../_images/wilson_both_square_nphi_1_4_t_1.png"><img alt="Wilson Loops" src="../_images/wilson_both_square_nphi_1_4_t_1.png" style="width: 32%;" /></a>
 <a class="reference internal image-reference" href="../_images/band_structure_2D_both_square_nphi_1_4_t_1.png"><img alt="2D Band Structure" src="../_images/band_structure_2D_both_square_nphi_1_4_t_1.png" style="width: 32%;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is not possible to define a high-symmetry path for the generalized Hofstadter model as a continuous function of lattice anisotropy and obliqueness. Instead, we use reference paths to plot the 2D band structures.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 10.0%" />
+<col style="width: 30.0%" />
+<col style="width: 30.0%" />
+<col style="width: 30.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Lattice</p></th>
+<th class="head"><p>UC Lattice Vectors</p></th>
+<th class="head"><p>UC Basis Vectors</p></th>
+<th class="head"><p>Reference Path</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">square</span></code></p></td>
+<td><p><span class="math notranslate nohighlight">\(\mathbf{a}_1 = a (1, 0)\)</span>, <span class="math notranslate nohighlight">\(\mathbf{a}_2=a(0, 1)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((0, 0)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\Gamma\to X \to M \to Y \to \Gamma\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">triangular</span></code></p></td>
+<td><p><span class="math notranslate nohighlight">\(\mathbf{a}_1 = a (1, 0)\)</span>, <span class="math notranslate nohighlight">\(\mathbf{a}_2=a (1/2, \sqrt{3}/2)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((0, 0)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\Gamma \to K \to M \to K' \to \Gamma\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">bravais</span></code></p></td>
+<td><p><span class="math notranslate nohighlight">\(\mathbf{a}_1 = a (1, 0)\)</span>, <span class="math notranslate nohighlight">\(\mathbf{a}_2=a \alpha (\cos \theta, \sin \theta)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((0, 0)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\begin{cases}\Gamma \to K \to M \to K' \to \Gamma, \;\;\; &amp;\text{when }\theta\text{ is a multiple of }\pi/3\text{ but not }\pi/2 \\ \Gamma \to X \to M \to Y \to \Gamma, \;\;\; &amp;\text{otherwise}\end{cases}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">honeycomb</span></code></p></td>
+<td><p><span class="math notranslate nohighlight">\(\mathbf{a}_1 = a (1, 0)\)</span>, <span class="math notranslate nohighlight">\(\mathbf{a}_2=a \alpha (\cos \theta, \sin \theta)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((0, 0)\)</span>, <span class="math notranslate nohighlight">\((a_{1,x}/2, a_{2,y}/3)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\Gamma \to K \to M \to K' \to \Gamma\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">kagome</span></code></p></td>
+<td><p><span class="math notranslate nohighlight">\(\mathbf{a}_1 = a (1, 0)\)</span>, <span class="math notranslate nohighlight">\(\mathbf{a}_2=a \alpha (\cos \theta, \sin \theta)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((0, 0)\)</span>, <span class="math notranslate nohighlight">\((a_{1,x}/2, 0)\)</span>, <span class="math notranslate nohighlight">\((a_{2,x}/2, a_{2,y}/2)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\Gamma \to K \to M \to K' \to M' \to \Gamma\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>The reference points are defined as: <span class="math notranslate nohighlight">\(\Gamma = (0, 0)\)</span>, <span class="math notranslate nohighlight">\(M = (1/2, 1/2)\)</span>, <span class="math notranslate nohighlight">\(X = (1/2, 0)\)</span>, <span class="math notranslate nohighlight">\(Y = (0, 1/2)\)</span>, <span class="math notranslate nohighlight">\(K = (2/3, 1/3)\)</span>, <span class="math notranslate nohighlight">\(K' = (1/3, 2/3)\)</span>, <span class="math notranslate nohighlight">\(M' = (0, 1/2)\)</span>, in fractional units of the MUC reciprocal lattice vectors. The difference between <span class="math notranslate nohighlight">\(Y\)</span> and <span class="math notranslate nohighlight">\(M'\)</span> is simply convention, depending on whether we are referring to rectangular or hexagonal Brillouin zones.</p>
+<p>We emphasize that the paths defined above are only <em>high-symmetry paths</em> in special cases, where the corresponding symmetries are present, such as at zero magnetic field. In all other cases, these are simply <em>reference paths</em> through <span class="math notranslate nohighlight">\(k\)</span>-space to facilitate easy comparison, and the full 3D band structure should also be examined.</p>
+</div>
 <p>In the general case, the procedure follows in a similar way. We start by writing down the time-independent Schrödinger equation for each site in the basis, which we index using lowercase Greek letters <span class="math notranslate nohighlight">\(\alpha,\beta\)</span>. This yields a set <span class="math notranslate nohighlight">\(N_\mathrm{b}\)</span> simultaneous equations, which we can write in matrix form, such that <span class="math notranslate nohighlight">\(\mathbf{H}\boldsymbol{\psi}=E\boldsymbol{\psi}\)</span>, where <span class="math notranslate nohighlight">\(\boldsymbol{\psi}=(\psi^0, \psi^1, \dots, \psi^{N_\mathrm{b}-1})^\intercal\)</span> is a vector of length <span class="math notranslate nohighlight">\(N_\mathrm{b}\)</span>, and the <span class="math notranslate nohighlight">\(N_\mathrm{b}\times N_\mathrm{b}\)</span> Hamiltonian matrix is given as</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\mathbf{H} =
@@ -299,15 +347,15 @@ H^{10} &amp; H^{11} &amp; \dots \\
 <p>where <span class="math notranslate nohighlight">\(H^{\alpha\beta}\)</span> is the Hamiltonian for hoppings from sublattice <span class="math notranslate nohighlight">\(\alpha\)</span> to sublattice <span class="math notranslate nohighlight">\(\beta\)</span>. Then, for each <span class="math notranslate nohighlight">\(H^{\alpha\beta}\)</span> we can write down a <span class="math notranslate nohighlight">\(q\times q\)</span> Harper matrix, as before. For Landau gauge in the y-direction <span class="math notranslate nohighlight">\(\mathbf{A}=-By \hat{\mathbf{e}}_x\)</span>, the general form of the Harper matrix is given as</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\mathbf{H} = \begin{pmatrix}
-                                                 \Lambda_{0,0} &amp; \Lambda_{0,1} &amp; \dots \\
-                                                 \Lambda_{1,0} &amp; \Lambda_{1,1} &amp; \dots \\
-                                                 \vdots &amp; \vdots &amp; \ddots
-                                                 \end{pmatrix} +
-                                                 \begin{pmatrix}
-                                                 \ddots &amp; \Lambda_{0, q-1}^* &amp; \Lambda_{0, q}^* \\
-                                                 \Lambda_{q-1, 0} &amp; \ddots &amp; \Lambda_{1, q}^* \\
-                                                 \Lambda_{q, 0} &amp; \Lambda_{q, 1} &amp; \ddots
-                                                 \end{pmatrix},\end{split}\]</div>
+             \Lambda_{0,0} &amp; \Lambda_{0,1} &amp; \dots \\
+             \Lambda_{1,0} &amp; \Lambda_{1,1} &amp; \dots \\
+             \vdots &amp; \vdots &amp; \ddots
+             \end{pmatrix} +
+             \begin{pmatrix}
+             \ddots &amp; \Lambda_{0, q-1}^* &amp; \Lambda_{0, q}^* \\
+             \Lambda_{q-1, 0} &amp; \ddots &amp; \Lambda_{1, q}^* \\
+             \Lambda_{q, 0} &amp; \Lambda_{q, 1} &amp; \ddots
+             \end{pmatrix},\end{split}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\Lambda_{l, n}\)</span> is the diagonal function, and we have dropped the <span class="math notranslate nohighlight">\(\alpha\beta\)</span> superscripts for readability. The second matrix simply accounts for rolled over boundary terms. Since we are working in Landau gauge in the y-direction, the <strong>diagonal function</strong> may be written as</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\Lambda_{l, n} = - \sum_\kappa \sum_{\langle ij \rangle_{\kappa}^l} t_\kappa e^{\\\mathrm{i}\theta_{ij}} e^{\\\mathrm{i}\\\mathbf{k}\cdot\\\mathbf{r}},\end{split}\]</div>
