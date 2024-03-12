@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Troubleshooting &mdash; HofstadterTools 1.0.2 documentation</title>
+  <title>Troubleshooting &mdash; HofstadterTools 1.0.3 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
       <link rel="stylesheet" type="text/css" href="_static/graphviz.css" />
@@ -259,9 +259,9 @@
 <h2>General Questions<a class="headerlink" href="#general-questions" title="Permalink to this heading"></a></h2>
 <div class="admonition-question admonition">
 <p class="admonition-title">Question</p>
-<p>I get an argparse error when one of my command line arguments is a negative number. What is correct syntax so that Python does not interpret my negative numbers as flags?</p>
+<p>I get an argparse error when one of my command line arguments is a negative number. What is the correct syntax so that Python does not interpret my negative numbers as flags?</p>
 </div>
-<p>If you would like to parse negative number arguments to command line flags, it’s best to use quotation marks with a preceding space, e.g. <code class="docutils literal notranslate"><span class="pre">-t</span> <span class="pre">1</span> <span class="pre">0</span> <span class="pre">&quot;</span> <span class="pre">-0.25&quot;</span></code>.</p>
+<p>If you would like to parse negative number arguments to command line flags, it is best to use quotation marks with a preceding space, e.g. <code class="docutils literal notranslate"><span class="pre">-t</span> <span class="pre">1</span> <span class="pre">0</span> <span class="pre">&quot;</span> <span class="pre">-0.25&quot;</span></code>.</p>
 <div class="admonition-question admonition">
 <p class="admonition-title">Question</p>
 <p>When computing for the <code class="docutils literal notranslate"><span class="pre">square</span></code> or <code class="docutils literal notranslate"><span class="pre">triangular</span></code> lattices, the flags <code class="docutils literal notranslate"><span class="pre">-alpha</span></code> and <code class="docutils literal notranslate"><span class="pre">-theta</span></code> do not seem to do anything. Why not?</p>
@@ -296,7 +296,7 @@
 <p class="admonition-title">Question</p>
 <p>I have adjusted the <code class="docutils literal notranslate"><span class="pre">-alpha</span></code> lattice anisotropy flag and now the band structures and butterfly spectra look odd. Is this expected behavior?</p>
 </div>
-<p>In HofstadterTools, <span class="math notranslate nohighlight">\(\kappa\)</span>-th nearest neighbors are defined as a group of sites that are the same radius from a reference site. We stress that these points lie on a <em>circle</em> and not, for example, on an ellipse that is scaled by the Bravais lattice vector lengths. Hence, by adjusting the lattice anisotropy, you may inadvertently change the number of nearest neighbors.</p>
+<p>In HofstadterTools, <span class="math notranslate nohighlight">\(\kappa\)</span>-th nearest neighbors are defined as a group of sites that are the same radius from a reference site. We stress that these points lie on a <em>circle</em> and not, for example, on an ellipse that is scaled by the Bravais lattice vector lengths. Hence, by adjusting the lattice anisotropy, you may inadvertently change the number of nearest neighbors. You can easily check this by plotting the lattice using the <code class="docutils literal notranslate"><span class="pre">--plot_lattice</span></code> flag.</p>
 <div class="admonition-question admonition">
 <p class="admonition-title">Question</p>
 <p>Where can I find the version number of my local copy of HofstadterTools?</p>
@@ -309,7 +309,7 @@
 <p class="admonition-title">Question</p>
 <p>I would like to analyze the topology / quantum geometry of the bands, but I do not see such data in the output table of the <code class="docutils literal notranslate"><span class="pre">band_structure</span></code> program. How can I do this?</p>
 </div>
-<p>By default, the topology and quantum geometry computations are turned off in the <code class="docutils literal notranslate"><span class="pre">band_structure</span></code> program (for speed reasons). If you would like to turn these on, or configure the output table in any other way, you can use the <code class="docutils literal notranslate"><span class="pre">-topo</span></code>, <code class="docutils literal notranslate"><span class="pre">-geom</span></code>, and <code class="docutils literal notranslate"><span class="pre">-cols</span></code> flags. The basic band structure columns are returned by default. The <code class="docutils literal notranslate"><span class="pre">-topo</span></code> flag will additionally return the topology columns, the <code class="docutils literal notranslate"><span class="pre">geom</span></code> flag will additionally return the quantum geometry columns, whereas the <code class="docutils literal notranslate"><span class="pre">-cols</span></code> flag will override all settings and return a custom selection of columns. Note that the {basic,topology,geometry} table columns are grouped by computational expense.</p>
+<p>By default, the topology and quantum geometry computations are turned off in the <code class="docutils literal notranslate"><span class="pre">band_structure</span></code> program (for speed reasons). If you would like to turn these on, or configure the output table in any other way, you can use the <code class="docutils literal notranslate"><span class="pre">-topo</span></code>, <code class="docutils literal notranslate"><span class="pre">-geom</span></code>, and <code class="docutils literal notranslate"><span class="pre">-cols</span></code> flags. The basic band structure columns are returned by default. The <code class="docutils literal notranslate"><span class="pre">-topo</span></code> flag will additionally return the topology columns, the <code class="docutils literal notranslate"><span class="pre">geom</span></code> flag will additionally return the quantum geometry columns, and the <code class="docutils literal notranslate"><span class="pre">-cols</span></code> flag will override all settings to return a custom selection of columns. Note that the {basic,topology,geometry} table columns are grouped by computational expense.</p>
 <div class="admonition-question admonition">
 <p class="admonition-title">Question</p>
 <p>I would like to compute the band structure of my custom Hamiltonian but it is running very slowly compared to standard examples. Why is this?</p>

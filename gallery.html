@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gallery &mdash; HofstadterTools 1.0.2 documentation</title>
+  <title>Gallery &mdash; HofstadterTools 1.0.3 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
       <link rel="stylesheet" type="text/css" href="_static/graphviz.css" />
@@ -260,13 +260,17 @@
 <ul class="simple">
 <li><p>The traditional Hofstadter butterfly with nearest-neighbor hoppings on the square lattice. The red-blue color scheme is chosen to mimic Fig.1(a,b) from <span id="id1">[<a class="reference internal" href="references.html#id10" title="F. Di Colandrea, A. D’Errico, M. Maffei, H. M. Price, M. Lewenstein, L. Marrucci, F. Cardano, A. Dauphin, and P. Massignan. Linking topological features of the Hofstadter model to optical diffraction figures. New Journal of Physics, 24(1):013028, Jan 2022. URL: https://dx.doi.org/10.1088/1367-2630/ac4126, doi:10.1088/1367-2630/ac4126.">DiColandrea22</a>]</span>.</p></li>
 </ul>
-<p><code class="docutils literal notranslate"><span class="pre">butterfly</span> <span class="pre">-mod</span> <span class="pre">Hofstadter</span> <span class="pre">-q</span> <span class="pre">499</span> <span class="pre">-lat</span> <span class="pre">square</span> <span class="pre">-col</span> <span class="pre">plane</span> <span class="pre">-pal</span> <span class="pre">red-blue</span> <span class="pre">-wan</span> <span class="pre">-dpi</span> <span class="pre">500</span> <span class="pre">-save</span></code></p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">butterfly -mod Hofstadter -q 499 -lat square -col plane -pal red-blue -wan -dpi 500 -save</span>
+</pre></div>
+</div>
 <a class="reference internal image-reference" href="_images/butterfly_square_q_499_t_1_col_plane_red-blue_dpi_500.png"><img alt="_images/butterfly_square_q_499_t_1_col_plane_red-blue_dpi_500.png" class="align-center" src="_images/butterfly_square_q_499_t_1_col_plane_red-blue_dpi_500.png" style="width: 70%;" /></a>
 <a class="reference internal image-reference" href="_images/wannier_square_q_499_t_1_col_plane_red-blue_dpi_500.png"><img alt="_images/wannier_square_q_499_t_1_col_plane_red-blue_dpi_500.png" class="align-center" src="_images/wannier_square_q_499_t_1_col_plane_red-blue_dpi_500.png" style="width: 70%;" /></a>
 <ul class="simple">
-<li><p>The Hofstadter model with 1st and 3rd nearest-neighbor hoppings on the square lattice, with hopping amplitudes chosen such that it is at the zero-quadratic point. The jet point color scheme is chosen to mimic Fig.2(b) from <span id="id2">[<a class="reference internal" href="references.html#id39" title="B. Andrews, M. Raja, N. Mishra, M. Zaletel, and R. Roy. Stability of fractional Chern insulators with a non-Landau level continuum limit. 2023. arXiv:2310.05758.">Andrews23</a>]</span>. This butterfly is plotted in Fig.2 of <span id="id3">[<a class="reference internal" href="references.html#id3" title="D. Bauer, S. Talkington, F. Harper, B. Andrews, and R. Roy. Fractional Chern insulators with a non-Landau level continuum limit. Physical Review B, 105:045144, Jan 2022. URL: https://link.aps.org/doi/10.1103/PhysRevB.105.045144, doi:10.1103/PhysRevB.105.045144.">Bauer22</a>]</span>.</p></li>
+<li><p>The Hofstadter model with 1st and 3rd nearest-neighbor hoppings on the square lattice, with hopping amplitudes chosen such that it is at the zero-quadratic point. The jet point color scheme is chosen to mimic Fig.2(b) from <span id="id2">[<a class="reference internal" href="references.html#id39" title="B. Andrews, M. Raja, N. Mishra, M. Zaletel, and R. Roy. Stability of fractional Chern insulators with a non-Landau level continuum limit. 2023. arXiv:2310.05758, doi:10.48550/arXiv.2310.05758.">Andrews23</a>]</span>. This butterfly is plotted in Fig.2 of <span id="id3">[<a class="reference internal" href="references.html#id3" title="D. Bauer, S. Talkington, F. Harper, B. Andrews, and R. Roy. Fractional Chern insulators with a non-Landau level continuum limit. Physical Review B, 105:045144, Jan 2022. URL: https://link.aps.org/doi/10.1103/PhysRevB.105.045144, doi:10.1103/PhysRevB.105.045144.">Bauer22</a>]</span>.</p></li>
 </ul>
-<p><code class="docutils literal notranslate"><span class="pre">butterfly</span> <span class="pre">-mod</span> <span class="pre">Hofstadter</span> <span class="pre">-q</span> <span class="pre">499</span> <span class="pre">-lat</span> <span class="pre">square</span> <span class="pre">-t</span> <span class="pre">1</span> <span class="pre">0</span> <span class="pre">&quot;</span> <span class="pre">-0.25&quot;</span> <span class="pre">-col</span> <span class="pre">point</span> <span class="pre">-pal</span> <span class="pre">jet</span> <span class="pre">-dpi</span> <span class="pre">500</span> <span class="pre">-save</span></code></p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">butterfly -mod Hofstadter -q 499 -lat square -t 1 0 &quot; -0.25&quot; -col point -pal jet -dpi 500 -save</span>
+</pre></div>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The Hofstadter Hamiltonian is defined with an overall minus sign in HofstadterTools. Hence, <code class="docutils literal notranslate"><span class="pre">-t</span> <span class="pre">1</span></code> translates to an effective hopping strength of -1 for nearest-neighbor terms, and so on.</p>
@@ -278,7 +282,9 @@
 <ul class="simple">
 <li><p>The Hofstadter model with nearest-neighbor hoppings on the triangular lattice. Note that in this case, we keep the default definition of the flux density defined with respect to the lattice unit cell area. In several works, e.g. <span id="id4">[<a class="reference internal" href="references.html#id30" title="A. Stegmaier, L. K. Upreti, R. Thomale, and I. Boettcher. Universality of Hofstadter butterflies on hyperbolic lattices. Physical Review Letters, 128:166402, Apr 2022. URL: https://link.aps.org/doi/10.1103/PhysRevLett.128.166402, doi:10.1103/PhysRevLett.128.166402.">Stegmaier22</a>]</span>, the flux density is defined with respect to the minimal hopping plaquette area, which reveals the entire spectrum.</p></li>
 </ul>
-<p><code class="docutils literal notranslate"><span class="pre">butterfly</span> <span class="pre">-mod</span> <span class="pre">Hofstadter</span> <span class="pre">-q</span> <span class="pre">499</span> <span class="pre">-lat</span> <span class="pre">triangular</span> <span class="pre">-col</span> <span class="pre">plane</span> <span class="pre">-pal</span> <span class="pre">jet</span> <span class="pre">-dpi</span> <span class="pre">500</span> <span class="pre">-save</span></code></p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">butterfly -mod Hofstadter -q 499 -lat triangular -col plane -pal jet -dpi 500 -save</span>
+</pre></div>
+</div>
 <a class="reference internal image-reference" href="_images/butterfly_triangular_q_499_t_1_col_plane_jet_dpi_500.png"><img alt="_images/butterfly_triangular_q_499_t_1_col_plane_jet_dpi_500.png" class="align-center" src="_images/butterfly_triangular_q_499_t_1_col_plane_jet_dpi_500.png" style="width: 70%;" /></a>
 </section>
 <section id="bravais-lattice">
@@ -286,7 +292,9 @@
 <ul class="simple">
 <li><p>The Hofstadter model on a Bravais lattice with an obliqueness angle of 67/180 in units of <span class="math notranslate nohighlight">\(\\\pi\)</span>, in between the square and triangular lattices. The hopping amplitudes are similar (but not identical) to those used in Fig.4(c) of <span id="id5">[<a class="reference internal" href="references.html#id13" title="F. Yilmaz and M. Ö. Oktel. Hofstadter butterfly evolution in the space of two-dimensional Bravais lattices. Physical Review A, 95:063628, Jun 2017. URL: https://link.aps.org/doi/10.1103/PhysRevA.95.063628, doi:10.1103/PhysRevA.95.063628.">Yilmaz17</a>]</span>.</p></li>
 </ul>
-<p><code class="docutils literal notranslate"><span class="pre">butterfly</span> <span class="pre">-mod</span> <span class="pre">Hofstadter</span> <span class="pre">-q</span> <span class="pre">499</span> <span class="pre">-lat</span> <span class="pre">bravais</span> <span class="pre">-theta</span> <span class="pre">67</span> <span class="pre">180</span> <span class="pre">-t</span> <span class="pre">0.5</span> <span class="pre">0.2</span> <span class="pre">-dpi</span> <span class="pre">500</span> <span class="pre">-save</span></code></p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">butterfly -mod Hofstadter -q 499 -lat bravais -theta 67 180 -t 0.5 0.2 -dpi 500 -save</span>
+</pre></div>
+</div>
 <a class="reference internal image-reference" href="_images/butterfly_bravais_q_499_t_0.5_0.2_alpha_1_theta_67_180_dpi_500.png"><img alt="_images/butterfly_bravais_q_499_t_0.5_0.2_alpha_1_theta_67_180_dpi_500.png" class="align-center" src="_images/butterfly_bravais_q_499_t_0.5_0.2_alpha_1_theta_67_180_dpi_500.png" style="width: 70%;" /></a>
 </section>
 <section id="honeycomb-lattice">
@@ -294,18 +302,24 @@
 <ul class="simple">
 <li><p>The Hofstadter model with nearest-neighbor hoppings on a honeycomb lattice. The color scheme is chosen to mimic the one made famous by Avron in his original paper <span id="id6">[<a class="reference internal" href="references.html#id18" title="J. E. Avron, D. Osadchy, and R. Seiler. A Topological Look at the Quantum Hall Effect. Physics Today, 56(8):38-42, Aug 2003. URL: https://doi.org/10.1063/1.1611351, doi:10.1063/1.1611351.">Avron03</a>]</span>. This butterfly is also plotted in Fig.5 of <span id="id7">[<a class="reference internal" href="references.html#id16" title="A. Agazzi, J.-P. Eckmann, and G. M. Graf. The colored Hofstadter butterfly for the honeycomb lattice. Journal of Statistical Physics, 156(3):417–426, Aug 2014. URL: https://doi.org/10.1007/s10955-014-0992-0, doi:10.1007/s10955-014-0992-0.">Agazzi14</a>]</span>. For aesthetics, we increase the dpi to 1000 and plot the spectrum in <code class="docutils literal notranslate"><span class="pre">art</span></code> mode, which removes the axes/labels and makes the white color transparent.</p></li>
 </ul>
-<p><code class="docutils literal notranslate"><span class="pre">butterfly</span> <span class="pre">-mod</span> <span class="pre">Hofstadter</span> <span class="pre">-q</span> <span class="pre">499</span> <span class="pre">-lat</span> <span class="pre">honeycomb</span> <span class="pre">-col</span> <span class="pre">plane</span> <span class="pre">-art</span> <span class="pre">-wan</span> <span class="pre">-dpi</span> <span class="pre">1000</span> <span class="pre">-save</span></code></p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">butterfly -mod Hofstadter -q 499 -lat honeycomb -col plane -art -wan -dpi 1000 -save</span>
+</pre></div>
+</div>
 <a class="reference internal image-reference" href="_images/butterfly_honeycomb_q_499_t_1_alpha_1_theta_1_3_col_plane_avron_art_dpi_1000.png"><img alt="_images/butterfly_honeycomb_q_499_t_1_alpha_1_theta_1_3_col_plane_avron_art_dpi_1000.png" class="align-center" src="_images/butterfly_honeycomb_q_499_t_1_alpha_1_theta_1_3_col_plane_avron_art_dpi_1000.png" style="width: 70%;" /></a>
 <a class="reference internal image-reference" href="_images/wannier_honeycomb_q_499_t_1_alpha_1_theta_1_3_col_plane_avron_art_dpi_1000.png"><img alt="_images/wannier_honeycomb_q_499_t_1_alpha_1_theta_1_3_col_plane_avron_art_dpi_1000.png" class="align-center" src="_images/wannier_honeycomb_q_499_t_1_alpha_1_theta_1_3_col_plane_avron_art_dpi_1000.png" style="width: 70%;" /></a>
 <ul class="simple">
 <li><p>The Hofstadter model with equal-amplitude 1st and 2nd nearest-neighbor hopping on the honeycomb lattice. In this case, the minimal plaquette area enclosed by particle hopping is 6 times smaller than the unit cell area, and so we append <code class="docutils literal notranslate"><span class="pre">--periodicity</span> <span class="pre">6</span></code> to resolve the entire butterfly spectrum and fix any aperiodicity.</p></li>
 </ul>
-<p><code class="docutils literal notranslate"><span class="pre">butterfly</span> <span class="pre">-mod</span> <span class="pre">Hofstadter</span> <span class="pre">-q</span> <span class="pre">499</span> <span class="pre">-lat</span> <span class="pre">honeycomb</span> <span class="pre">-t</span> <span class="pre">1</span> <span class="pre">1</span> <span class="pre">-period</span> <span class="pre">6</span> <span class="pre">-dpi</span> <span class="pre">500</span> <span class="pre">-save</span></code></p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">butterfly -mod Hofstadter -q 499 -lat honeycomb -t 1 1 -period 6 -dpi 500 -save</span>
+</pre></div>
+</div>
 <a class="reference internal image-reference" href="_images/butterfly_honeycomb_q_499_t_1_1_alpha_1_theta_1_3_period_6_dpi_500.png"><img alt="_images/butterfly_honeycomb_q_499_t_1_1_alpha_1_theta_1_3_period_6_dpi_500.png" class="align-center" src="_images/butterfly_honeycomb_q_499_t_1_1_alpha_1_theta_1_3_period_6_dpi_500.png" style="width: 70%;" /></a>
 <ul class="simple">
 <li><p>The Hofstadter model with 5th nearest-neighbor hopping on the honeycomb lattice. In this case, the model is equivalent to 2nd nearest-neighbor hoppings on a triangular sublattice. The ratio between the effective unit cell area spanned by the hopping terms and the minimal hopping plaquette area is 2, and so we append the flag <code class="docutils literal notranslate"><span class="pre">--periodicity</span> <span class="pre">2</span></code> to resolve the entire butterfly spectrum and fix any aperiodicity. The butterfly spectrum for 2nd nearest-neighbor hoppings on a triangular lattice is shown in Fig.4 of <span id="id8">[<a class="reference internal" href="references.html#id40" title="G.-Y. Oh. Energy spectrum of a triangular lattice in a uniform magnetic field: effect of next-nearest-neighbor hopping. Journal of the Korean Physical Society, 37:534-539, 11 2000. doi:10.3938/jkps.37.534.">Oh00</a>]</span>.</p></li>
 </ul>
-<p><code class="docutils literal notranslate"><span class="pre">butterfly</span> <span class="pre">-mod</span> <span class="pre">Hofstadter</span> <span class="pre">-q</span> <span class="pre">499</span> <span class="pre">-lat</span> <span class="pre">honeycomb</span> <span class="pre">-t</span> <span class="pre">0</span> <span class="pre">0</span> <span class="pre">0</span> <span class="pre">0</span> <span class="pre">1</span> <span class="pre">-period</span> <span class="pre">2</span> <span class="pre">-dpi</span> <span class="pre">500</span> <span class="pre">-save</span></code></p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">butterfly -mod Hofstadter -q 499 -lat honeycomb -t 0 0 0 0 1 -period 2 -dpi 500 -save</span>
+</pre></div>
+</div>
 <a class="reference internal image-reference" href="_images/butterfly_honeycomb_q_499_t_0_0_0_0_1_alpha_1_theta_1_3_period_2_dpi_500.png"><img alt="_images/butterfly_honeycomb_q_499_t_0_0_0_0_1_alpha_1_theta_1_3_period_2_dpi_500.png" class="align-center" src="_images/butterfly_honeycomb_q_499_t_0_0_0_0_1_alpha_1_theta_1_3_period_2_dpi_500.png" style="width: 70%;" /></a>
 </section>
 <section id="kagome-lattice">
@@ -313,7 +327,9 @@
 <ul class="simple">
 <li><p>The Hofstadter model with nearest-neighbor hopping on the kagome lattice. In this case, the minimal plaquette area enclosed by particle hopping is 8 times smaller than the unit cell area, and so we append <code class="docutils literal notranslate"><span class="pre">--periodicity</span> <span class="pre">8</span></code> to resolve the entire butterfly spectrum and fix any aperiodicity. This butterfly is also plotted in Fig.3 of <span id="id9">[<a class="reference internal" href="references.html#id11" title="H. Jing-Min. Light-induced Hofstadter's butterfly spectrum of ultracold atoms on the two-dimensional kagomé lattice. Chinese Physics Letters, 26(12):123701, Dec 2009. URL: https://dx.doi.org/10.1088/0256-307X/26/12/123701, doi:10.1088/0256-307X/26/12/123701.">Jing-Min09</a>]</span> and Fig.2(a) of <span id="id10">[<a class="reference internal" href="references.html#id12" title="L. Du, Q. Chen, A. D. Barr, A. R. Barr, and G. A. Fiete. Floquet Hofstadter butterfly on the kagome and triangular lattices. Physical Review B, 98:245145, Dec 2018. URL: https://link.aps.org/doi/10.1103/PhysRevB.98.245145, doi:10.1103/PhysRevB.98.245145.">Du18</a>]</span>.</p></li>
 </ul>
-<p><code class="docutils literal notranslate"><span class="pre">butterfly</span> <span class="pre">-mod</span> <span class="pre">Hofstadter</span> <span class="pre">-q</span> <span class="pre">499</span> <span class="pre">-lat</span> <span class="pre">kagome</span> <span class="pre">-period</span> <span class="pre">8</span> <span class="pre">-dpi</span> <span class="pre">500</span> <span class="pre">-save</span></code></p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">butterfly -mod Hofstadter -q 499 -lat kagome -period 8 -dpi 500 -save</span>
+</pre></div>
+</div>
 <a class="reference internal image-reference" href="_images/butterfly_kagome_q_499_t_1_alpha_1_theta_1_3_period_8_dpi_500.png"><img alt="_images/butterfly_kagome_q_499_t_1_alpha_1_theta_1_3_period_8_dpi_500.png" class="align-center" src="_images/butterfly_kagome_q_499_t_1_alpha_1_theta_1_3_period_8_dpi_500.png" style="width: 70%;" /></a>
 <p>Please contact <a class="reference external" href="https://bartandrews.me">Bart Andrews</a> if you have any interesting contributions to the gallery!</p>
 </section>

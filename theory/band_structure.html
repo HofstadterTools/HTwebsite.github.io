@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Band Structure &mdash; HofstadterTools 1.0.2 documentation</title>
+  <title>Band Structure &mdash; HofstadterTools 1.0.3 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
       <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
@@ -265,7 +265,7 @@
 \[E \Psi_{m,n} = -t e^{-\mathrm{i}2\pi n_\phi n} \Psi_{m+1, n} - t \Psi_{m, n+1} + \mathrm{H.c.},\]</div>
 <p>where <span class="math notranslate nohighlight">\(\Psi_{m,n}\)</span> is the wavefunction at unit cell <span class="math notranslate nohighlight">\((m,n)\)</span> and <span class="math notranslate nohighlight">\(t\)</span> is the hopping amplitude. Since we have taken Landau gauge in the y-direction, it is reasonable to assume plane wave behavior in the x-direction. Hence we can simplify the equation further by invoking the <strong>plane wave ansatz</strong> <span class="math notranslate nohighlight">\(\Psi_{m,n} = e^{\mathrm{i}\mathbf{r}\cdot\mathbf{k}}\psi_{n}\)</span>, such that</p>
 <div class="math notranslate nohighlight">
-\[E \psi_{n} = -t e^{-\mathrm{i}2\pi n_\phi n + \mathrm{i}k_x} \psi_{n} - t e^{\mathrm{i} k_y}\Psi_{m} + \mathrm{H.c.},\]</div>
+\[E \psi_{n} = -t e^{-\mathrm{i}2\pi n_\phi n + \mathrm{i}k_x} \psi_{n} - t e^{\mathrm{i} k_y}\psi_{n+1} + \mathrm{H.c.},\]</div>
 <p>which simplifies to</p>
 <div class="math notranslate nohighlight">
 \[E\psi_{n} = B^*\psi_{n-1} + A_n \psi_{n} + B\psi_{n+1},\]</div>
@@ -499,12 +499,12 @@ H^{10} &amp; H^{11} &amp; \dots \\
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">T</span></code></p></td>
 <td><p>Brillouin-zone-averaged Trace Inequality Saturation Measure (TISM)</p></td>
-<td><p><span class="math notranslate nohighlight">\(\langle\mathcal{T}\rangle = \langle \mathrm{tr} g(\mathbf{k}) - |\mathcal{B}(\mathbf{k})| \rangle\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\langle\mathcal{T}\rangle = \langle \mathrm{tr}\,g(\mathbf{k}) - |\mathcal{B}(\mathbf{k})| \rangle\)</span></p></td>
 <td><p>The TISM is non-negative and defined in Eq.(10) of <span id="id14">[<a class="reference internal" href="../references.html#id45" title="T. S. Jackson, G. Möller, and R. Roy. Geometric stability of topological lattice phases. Nature Communications, 6(1):8629, Nov 2015. URL: https://doi.org/10.1038/ncomms9629, doi:10.1038/ncomms9629.">Jackson15</a>]</span>.</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">D</span></code></p></td>
 <td><p>Brillouin-zone-averaged Determinant Inequality Saturation Measure (DISM)</p></td>
-<td><p><span class="math notranslate nohighlight">\(\langle\mathcal{D}\rangle = \langle \mathrm{det} g(\mathbf{k}) - \mathcal{B}^2(\mathbf{k})/4 \rangle\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\langle\mathcal{D}\rangle = \langle \mathrm{det}\,g(\mathbf{k}) - \mathcal{B}^2(\mathbf{k})/4 \rangle\)</span></p></td>
 <td><p>The DISM is non-negative and defined in Eq.(9) of <span id="id15">[<a class="reference internal" href="../references.html#id45" title="T. S. Jackson, G. Möller, and R. Roy. Geometric stability of topological lattice phases. Nature Communications, 6(1):8629, Nov 2015. URL: https://doi.org/10.1038/ncomms9629, doi:10.1038/ncomms9629.">Jackson15</a>]</span>.</p></td>
 </tr>
 </tbody>

@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Band Structure &mdash; HofstadterTools 1.0.2 documentation</title>
+  <title>Band Structure &mdash; HofstadterTools 1.0.3 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
       <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
@@ -375,7 +375,7 @@ Band Construction: 100%|##########| 4/4 [00:03&lt;00:00,  1.00it/s]
 </div>
 </div>
 <ol class="arabic simple" start="7">
-<li><p>Compute the band topology and geometry.</p></li>
+<li><p>Compute the band topology.</p></li>
 </ol>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
@@ -497,9 +497,9 @@ Band Properties: 4it [00:01,  2.28it/s]
 <img alt="../_images/tutorials_band_structure_21_0.png" src="../_images/tutorials_band_structure_21_0.png" />
 </div>
 </div>
-<p>That’s it! You have successfully plotted the band structure for the Hofstadter model with a flux density of <span class="math notranslate nohighlight">\(n_\phi=1/4\)</span>. Now, we can pause to comment on how the results are presented. First, we note that the bands are numbered from 0 to 3, where 0 is the lowest band. Although this is intuitive when discussing band structures, be aware that eigenvalues in <code class="docutils literal notranslate"><span class="pre">numpy</span></code> are typically given in descending order. Second, we can see that the groups of touching bands have been used to compute the
-Chern numbers. In this case, bands 1 and 2 are touching within the <code class="docutils literal notranslate"><span class="pre">band_gap_threshold</span></code> and have a joint Chern number of -2. Note that the band groups provide more information than the <code class="docutils literal notranslate"><span class="pre">isolated</span></code> column. For example, if all bands were touching in pairs, the isolated column would read all <code class="docutils literal notranslate"><span class="pre">False</span></code>, which is indistinguishable from the case of all bands touching. Finally, we note that in the case of band touching, certain properties that are applicable to the collective band, e.g. the
-bandwidth, are repeated on both rows. The value in each of these rows corresponds to the value for the band group. Moreover, the band gap column shows the gap to the band above and so is N/A for the highest band.</p>
+<p>That’s it! You have successfully plotted the band structure for the Hofstadter model with a flux density of <span class="math notranslate nohighlight">\(n_\phi=1/4\)</span>. Now, we can pause to comment on how the results are presented. First, we note that the bands are numbered from 0 to 3, where 0 is the lowest band. Although this is intuitive when discussing band structures, be aware that eigenvalues in <code class="docutils literal notranslate"><span class="pre">numpy</span></code> may be returned in a different order. Second, we can see that the groups of touching bands have been used to compute the Chern
+numbers. In this case, bands 1 and 2 are touching within the <code class="docutils literal notranslate"><span class="pre">band_gap_threshold</span></code> and have a joint Chern number of -2. Note that the band groups provide more information than the <code class="docutils literal notranslate"><span class="pre">isolated</span></code> column. For example, if all bands were touching in pairs, the isolated column would read all <code class="docutils literal notranslate"><span class="pre">False</span></code>, which is indistinguishable from the case of all bands touching. Finally, we note that in the case of band touching, certain properties that are applicable to the collective band, e.g. the bandwidth, are
+repeated on both rows. The value in each of these rows corresponds to the value for the band group. Moreover, the band gap column shows the gap to the band above and so is N/A for the highest band.</p>
 </section>
 
 
