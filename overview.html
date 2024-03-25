@@ -297,48 +297,48 @@
 <section id="using-pip">
 <h4>Using pip<a class="headerlink" href="#using-pip" title="Permalink to this heading"></a></h4>
 <ol class="arabic simple">
-<li><p>[Optional] Create and activate a new venv environment. In the example below, <code class="docutils literal notranslate"><span class="pre">my_env_name</span></code> is the name of the venv and <code class="docutils literal notranslate"><span class="pre">my_env_folder</span></code> is the name of its folder. If needed, you can replace <code class="docutils literal notranslate"><span class="pre">python3</span></code> with <code class="docutils literal notranslate"><span class="pre">python3.xx</span></code> below to create a venv pinned to a particular Python version.</p></li>
+<li><p>[Optional] Create and activate a new venv environment. In the example below, <code class="docutils literal notranslate"><span class="pre">my_env</span></code> is the name of the venv and its parent folder. If needed, you can replace <code class="docutils literal notranslate"><span class="pre">python3</span></code> with <code class="docutils literal notranslate"><span class="pre">python3.xx</span></code> below to create a venv pinned to a particular Python version.</p></li>
 </ol>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">user@domain:any/path$ </span>python3<span class="w"> </span>-m<span class="w"> </span>my_env_name<span class="w"> </span>my_env_folder
-<span class="gp">user@domain:any/path$ </span><span class="nb">source</span><span class="w"> </span>path/to/my_env_folder/bin/activate
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">user@domain:any/path$ </span>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>my_env
+<span class="gp">user@domain:any/path$ </span><span class="nb">source</span><span class="w"> </span>path/to/my_env/bin/activate
 </pre></div>
 </div>
 <ol class="arabic simple" start="2">
 <li><p>Install HofstadterTools from PyPI.</p></li>
 </ol>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(my_env_name)</span> <span class="gp">user@domain:any/path$ </span>pip<span class="w"> </span>install<span class="w"> </span>HofstadterTools
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(my_env)</span> <span class="gp">user@domain:any/path$ </span>pip<span class="w"> </span>install<span class="w"> </span>HofstadterTools
 </pre></div>
 </div>
 <ol class="arabic simple" start="3">
 <li><p>[Optional] Upgrade an existing HofstadterTools installation.</p></li>
 </ol>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(my_env_name)</span> <span class="gp">user@domain:any/path$ </span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>HofstadterTools
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(my_env)</span> <span class="gp">user@domain:any/path$ </span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>HofstadterTools
 </pre></div>
 </div>
-<p>You can verify the installation by typing <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">list</span> <span class="pre">|</span> <span class="pre">grep</span> <span class="pre">HofstadterTools</span></code>, you can uninstall by typing <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">uninstall</span> <span class="pre">HofstadterTools</span></code>, and you can deactivate the environment by typing <code class="docutils literal notranslate"><span class="pre">deactivate</span></code>. The entire environment can be removed by deleting <code class="docutils literal notranslate"><span class="pre">my_env_folder</span></code>.</p>
+<p>You can verify the installation by typing <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">list</span> <span class="pre">|</span> <span class="pre">grep</span> <span class="pre">HofstadterTools</span></code>, you can uninstall by typing <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">uninstall</span> <span class="pre">HofstadterTools</span></code>, and you can deactivate the environment by typing <code class="docutils literal notranslate"><span class="pre">deactivate</span></code>. The entire environment can be removed by deleting the <code class="docutils literal notranslate"><span class="pre">my_env</span></code> folder.</p>
 </section>
 <section id="using-conda">
 <h4>Using conda<a class="headerlink" href="#using-conda" title="Permalink to this heading"></a></h4>
 <ol class="arabic simple">
-<li><p>[Optional] Create and activate a new conda environment. In the example below, <code class="docutils literal notranslate"><span class="pre">my_env_name</span></code> is the name of the conda environment. If needed, you can replace <code class="docutils literal notranslate"><span class="pre">python=3</span></code> with <code class="docutils literal notranslate"><span class="pre">python=3.xx</span></code> below to create a conda environment with a particular Python version pre-installed.</p></li>
+<li><p>[Optional] Create and activate a new conda environment. In the example below, <code class="docutils literal notranslate"><span class="pre">my_env</span></code> is the name of the conda environment. If needed, you can replace <code class="docutils literal notranslate"><span class="pre">python=3</span></code> with <code class="docutils literal notranslate"><span class="pre">python=3.xx</span></code> below to create a conda environment with a particular Python version pre-installed.</p></li>
 </ol>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">user@domain:any/path$ </span>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>my_env_name<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>
-<span class="gp">user@domain:any/path$ </span>conda<span class="w"> </span>activate<span class="w"> </span>my_env_name
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">user@domain:any/path$ </span>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>my_env<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>
+<span class="gp">user@domain:any/path$ </span>conda<span class="w"> </span>activate<span class="w"> </span>my_env
 </pre></div>
 </div>
 <ol class="arabic simple" start="2">
 <li><p>Install HofstadterTools from conda-forge.</p></li>
 </ol>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(my_env_name)</span> <span class="gp">user@domain:any/path$ </span>conda<span class="w"> </span>install<span class="w"> </span>conda-forge::HofstadterTools
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(my_env)</span> <span class="gp">user@domain:any/path$ </span>conda<span class="w"> </span>install<span class="w"> </span>conda-forge::HofstadterTools
 </pre></div>
 </div>
 <ol class="arabic simple" start="3">
 <li><p>[Optional] Update an existing HofstadterTools installation.</p></li>
 </ol>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(my_env_name)</span> <span class="gp">user@domain:any/path$ </span>conda<span class="w"> </span>update<span class="w"> </span>HofstadterTools
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(my_env)</span> <span class="gp">user@domain:any/path$ </span>conda<span class="w"> </span>update<span class="w"> </span>HofstadterTools
 </pre></div>
 </div>
-<p>You can verify the installation by typing <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">list</span> <span class="pre">|</span> <span class="pre">grep</span> <span class="pre">hofstadtertools</span></code>, you can uninstall by typing <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">remove</span> <span class="pre">HofstadterTools</span></code>, and you can deactivate the environment by typing <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">deactivate</span></code>. The entire environment can be removed by typing <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">remove</span> <span class="pre">-n</span> <span class="pre">my_env_name</span> <span class="pre">--all</span></code>.</p>
+<p>You can verify the installation by typing <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">list</span> <span class="pre">|</span> <span class="pre">grep</span> <span class="pre">hofstadtertools</span></code>, you can uninstall by typing <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">remove</span> <span class="pre">HofstadterTools</span></code>, and you can deactivate the environment by typing <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">deactivate</span></code>. The entire environment can be removed by typing <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">remove</span> <span class="pre">-n</span> <span class="pre">my_env</span> <span class="pre">--all</span></code>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>If you pip install HofstadterTools into a conda environment, you may see a <code class="docutils literal notranslate"><span class="pre">libGL</span> <span class="pre">error</span></code> when you run the programs. This is a known problem with the <code class="docutils literal notranslate"><span class="pre">libstdc++.so</span></code> file in Conda and should not affect the functionality of HofstadterTools.</p>
